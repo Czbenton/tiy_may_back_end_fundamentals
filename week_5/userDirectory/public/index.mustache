@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <h1>Index</h1>
+
+    <div class="mainContainer">
+        {{#userList}}
+
+        <div class="user" onclick="routeToDetails({{id}})">
+            <img src="{{avatar}}" alt="noImage"> {{#job}}
+            <p>{{job}},&nbsp{{company}}</p>
+            {{/job}} {{^job}}
+            <p class="hire">Available for hire!</p>
+            {{/job}}
+
+        </div>
+
+        {{/userList}}
+    </div>
+
+</body>
+<script src="./index.js"></script>
+
+</html>

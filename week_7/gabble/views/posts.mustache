@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+    <h1>Make some posts</h1>
+
+    <form action="/posts" method="POST">
+        <input type="text" name="msg_body" placeholder="Enter your post">
+        <input type="submit">
+    </form>
+
+    <div class="posts">
+        {{#post_messages}}
+        <div class="post"> {{msg_body}}</div>
+        {{/post_messages}}</div>
+
+</body>
+
+</html>

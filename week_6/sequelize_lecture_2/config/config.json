@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "johnjastrow",
+    "password": null,
+    "database": "sequelizelecture",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

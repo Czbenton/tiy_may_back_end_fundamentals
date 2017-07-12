@@ -1,0 +1,15 @@
+.errorMsg {
+  font-size: 2rem;
+  color: red;
+  text-shadow: 1px 1px 1px black;
+}
+
+.gameBoard {
+  font-size: 3rem;
+}
+
+.wrongList {
+  font-size: 1rem;
+  color: black;
+  text-shadow: none;
+}

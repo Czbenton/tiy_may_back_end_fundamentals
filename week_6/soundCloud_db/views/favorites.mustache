@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Favorites</title>
+</head>
+
+<body>
+
+    <h1>Here are your favorite songs!</h1>
+
+    {{#favorites}} {{artwork}}<br> {{title}}
+    <br> {{description}}
+    <br> {{artist}}
+    <br> {{stream_url}}
+    <br> {{/favorites}}
+
+</body>
+
+</html>

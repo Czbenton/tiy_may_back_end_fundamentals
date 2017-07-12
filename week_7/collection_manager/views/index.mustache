@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+    <h1>Arrow Heads!</h1>
+
+    <form id="mainForm" action="/arrowheads" method="post">
+        <input type="text" name="tribe" placeholder="tribe" required>
+        <input type="radio" value="oval" name="shape" checked>oval
+        <input type="radio" value="triangle" name="shape">trianlge
+        <input type="radio" value="spade" name="shape">spade
+        <input type="radio" value="ellipse" name="shape">ellipse
+        <input type="radio" value="unknown" name="shape">unknown
+        <input type="text" name="material" placeholder="material" required>
+        <input type="number" name="size" placeholder="size">
+        <input type="radio" name="sizeUnit" value="IN">inches
+        <input type="radio" name="sizeUnit" value="CM">centimeters
+        <input type="radio" name="sizeUnit" value="MM">millimeters
+        <input type="text" name="color" placeholder="color">
+        <input type="number" name="age" placeholder="age">
+        <input type="number" name="value" placeholder="value">
+        <input type="radio" name="currency" value="USD">USD
+        <input type="radio" name="currency" value="BP">BP
+        <input type="radio" name="currency" value="CD">CD
+        <fieldset>
+            <legend>Found Location</legend>
+            <input type="text" name="country" placeholder="country" required>
+            <input type="text" name="region" placeholder="region">
+            <input type="text" name="state_province" placeholder="state" required>
+            <input type="text" name="city" placeholder="city">
+            <input type="text" name="address" placeholder="address">
+            <input type="text" name="otherData" placeholder="notes">
+        </fieldset>
+        <input type="text" name="finders" placeholder="finders">
+        <input type="number" name="yearFound" placeholder="year found">
+        <input type="submit">
+    </form>
+
+    <!--{{#arrowHeads}}
+    <button id="{{tribe}}" onclick="tribe()">tribe</button> {{/arrowHeads}}-->
+
+
+    <script>
+        function tribe() {
+            console.log(event.target.id);
+        }
+    </script>
+</body>
+
+</html>

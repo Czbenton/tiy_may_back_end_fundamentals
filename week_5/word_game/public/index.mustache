@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Game!</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div id="counter" style="display: none">
+        {{wrongGuessCounter}}
+    </div>
+
+    <div class="gallows">
+        <img class="gallowsImg" src="./images/hang0.gif" alt="error" style="height: 12rem">
+    </div>
+
+    <div class="gameBoard">{{#emptyWord}} {{.}} {{/emptyWord}}</div>
+
+    <form action="/" method="post">
+        <input type="text" name="userGuess" placeholder="Enter a guess">
+        <input type="submit">
+    </form>
+
+    <div class="errorMsg">
+        {{errorMsg}}<br>
+        <p class="wrongList">Wrong Guesses:{{#wrongGuessList}} {{.}} {{/wrongGuessList}}</p>
+    </div>
+    <h2>CHEAT MODE:: {{randomWord}}</h2>
+</body>
+
+<script src="public.js"></script>
+
+</html>

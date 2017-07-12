@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "Zach",
+    "password": null,
+    "database": "sqlize_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "tannerplauche",
+    "password": null,
+    "database": "sqlizeDB",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "tannerplauche",
+    "password": null,
+    "database": "sqlizeDB",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
